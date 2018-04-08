@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { ProductPageComponent } from './product-page/product-page.component';
@@ -18,8 +19,8 @@ import { ProductListComponent } from './product-list/product-list.component';
     ProductTracklistingComponent,
     ProductListComponent
   ],
-  imports: [BrowserModule, FormsModule, HttpModule],
+  imports: [BrowserModule, FormsModule, HttpModule, RouterModule],
   providers: [ProductService],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
